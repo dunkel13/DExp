@@ -15,7 +15,7 @@ t.test(s,c, alternative = "two.sided", conf.level = 0.95, paired = F) #p-value =
 ### 1C
 t.test(s[s!=46.3],c, alternative = "two.sided", conf.level = 0.95, paired = F) #p-value = 0.001947
 ### 1D
-# El valor de la respuesta no corresponde en su totalidad al efecto de ese nivel (sin fracturas) del factor
+# El valor de la respuesta no corresponde en su totalidad al efecto de ese nivel (sin fracturas) del factor analizado
 # es decir el valor de 46.3 es explicado por otro factor diferente, en este caso tiroides
 ### 1E
 wilcox.test(s,c,alternative = "two.sided", paired = F) #p-value = 0.04988
