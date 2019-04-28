@@ -12,6 +12,7 @@ qqnorm(m)
 qqline(m)
 #
 ks.test(s,"pnorm",mean(s), sd(s), alternative = "two.sided", exact=NULL) #p-value = 0.06149
+# la prueba KS  sólo es buena cuando se conocen los parámetros poblaciones y tamaño de muestra grande
 shapiro.test(s) #p-value = 5.663e-05
 ks.test(c,"pnorm",mean(c), sd(c), alternative = "two.sided", exact=NULL)#p-value = 0.9464
 shapiro.test(c) #p-value = 0.9234
