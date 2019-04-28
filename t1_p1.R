@@ -11,9 +11,9 @@ shapiro.test(m) # p-value = 0.0001653
 qqnorm(m)
 qqline(m)
 #
-ks.test(s,"pnorm") #p-value < 2.2e-16
+ks.test(s,"pnorm",mean(s), sd(s), alternative = "two.sided", exact=NULL) #p-value = 0.06149
 shapiro.test(s) #p-value = 5.663e-05
-ks.test(c,"pnorm")#p-value < 2.2e-16
+ks.test(c,"pnorm",mean(c), sd(c), alternative = "two.sided", exact=NULL)#p-value = 0.9464
 shapiro.test(c) #p-value = 0.9234
 lillie.test(c) #p-value = 0.7111
 library(ggpubr)
