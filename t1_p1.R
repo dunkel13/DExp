@@ -10,6 +10,16 @@ ks.test(m,"pnorm") #p-value < 2.2e-16
 shapiro.test(m) # p-value = 0.0001653
 qqnorm(m)
 qqline(m)
+#
+ks.test(s,"pnorm") #p-value < 2.2e-16
+shapiro.test(s) #p-value = 5.663e-05
+ks.test(c,"pnorm")#p-value < 2.2e-16
+shapiro.test(c) #p-value = 0.9234
+lillie.test(c) #p-value = 0.7111
+library(ggpubr)
+ggqqplot(m)
+ggqqplot(s)
+ggqqplot(c)
 ### 1B
 t.test(s,c, alternative = "two.sided", conf.level = 0.95, paired = F) #p-value = 0.7531
 ### 1C
