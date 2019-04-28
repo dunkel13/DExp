@@ -42,7 +42,7 @@ round(Res.AB,2)
 
 library(stats)
 ks.test(A, "pnorm",media.A,desvEst.A, alternative = "two.sided", exact=NULL) #p-value = 0.1269
-# Una de las desbentajas de la prueba KS es que para cualquier distribución la conclusión será la misma: no rechazar ("le dice que sí a todo")
+# Una de las desventajas de la prueba KS es que para cualquier distribución la conclusión será la misma: no rechazar ("le dice que sí a todo")
 shapiro.test(A) #p-value = 0.002796
 lillie.test(A) #p-value = 0.001143
 ks.test(B, "pnorm",media.B,desvEst.B, alternative = "two.sided", exact=NULL) #p-value = 0.2157
