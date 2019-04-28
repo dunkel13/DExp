@@ -6,7 +6,7 @@ s<-c(18.7, 46.3, 21.7, 17.8, 21.5, 19.4, 19.5, 21.3)
 c<-c(25.1, 28.4, 23.2, 26.4, 25.7, 20.3, 21.4, 24.7)
 m<-c(s,c)
 ### 1A
-ks.test(m,"pnorm") #p-value < 2.2e-16
+ks.test(m,"pnorm", mean(m), sd(m)) #p-value = 0.3344
 shapiro.test(m) # p-value = 0.0001653
 qqnorm(m)
 qqline(m)
